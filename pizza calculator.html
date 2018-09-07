@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<style>
+		.pizza {
+			background-color: lightblue;
+			border: none;
+			padding: 30px 30px;
+
+			position: absolute;
+			margin-top: 10px;
+			margin-left: 10px;
+		}
+	</style>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <title>pizza calculator</title>
+</head>
+<body>
+  <h1>Pizza.nl</h1>
+  <ph> small pizza = 3.00<ph>
+	<br>
+<ph> medium pizza = 5.00<ph>
+	<br>
+<ph> large pizza = 7.00<ph>
+<br>
+<br>
+
+
+
+
+
+	<button class="pizza" onclick="pizzaDoetIets()">PIZZA</button> 
+
+  <script> 
+//Ricardo Thijssen  Opdracht: Pizza calculator
+
+alert('Welkom bij pizza.nl')
+const pizzaSmall = 3.00; //een kleine pizza kost 3.00
+const pizzaMedium = 5.00;//een normale pizza kost 5.00
+const pizzaLarge = 7.00; //een grote pizza kost 7.00
+
+
+function pizzaDoetIets(){ //als je op de knop klikt krijg je vragen.
+	var size = prompt("Wilt u small, medium of large?") //vraagt welke grootte pizza's je wilt.
+	var numbers = prompt("hoeveel pizza's wilt u?")  // vraagt hoeveel pizza's je wilt.
+// als de grootte klein is 
+if (size == "small"){
+
+	document.write(numbers + ' ' + "small pizza's kosten €" +pizzaSmall*numbers); //bijvoorbeeld: 4 small pizza's kosten €12.00
+
+}
+//als de grootte normaal is 
+if (size == "medium"){
+document.write(numbers + ' ' + "medium pizza's kosten €" +pizzaMedium*numbers); //bijvoorbeeld: 3 medium pizza's kosten 15.00
+
+}
+// als de grootte groot is 
+if (size == "large")
+document.write(numbers + ' ' + "large pizza's kosten €" +pizzaLarge*numbers); //bijvoorbeeld: 6 large pizza's kosten €42.00 
+
+}
+  
+  </script>
+ </body>
+</html>
